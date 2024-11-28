@@ -1,4 +1,4 @@
-package com.comunidadedevspace.imc
+package com.comunidadedevspace.Combustivel
 
 import org.junit.Test
 

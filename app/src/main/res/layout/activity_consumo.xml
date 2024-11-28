@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsumoActivity"
+    android:background="@color/dark_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background= "@drawable/corner_ly2"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="187dp"
+            android:layout_height="148dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginRight="80dp"
+            app:srcCompat="@drawable/consumo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Consumo do Combustivel"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_prox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:text="Passo 2 de 3"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:hintEnabled="false"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_consumo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/rounded_bg"
+            android:hint="Ex: 7.0 Km/L"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:textColorHint="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_prox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Proximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="44dp" />
+    <Button
+        android:id="@+id/btn_voltar2"
+        android:layout_width="37dp"
+        android:layout_height="44dp"
+        android:background="@color/transparente"
+        android:drawableTop="@drawable/ic_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

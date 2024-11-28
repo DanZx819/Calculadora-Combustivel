@@ -1,4 +1,4 @@
-package com.comunidadedevspace.imc
+package com.comunidadedevspace.Combustivel
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
