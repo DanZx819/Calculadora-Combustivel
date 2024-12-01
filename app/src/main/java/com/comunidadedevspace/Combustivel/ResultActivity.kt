@@ -30,7 +30,7 @@ class ResultActivity : AppCompatActivity() {
         val tv_consumo = findViewById<TextView>(R.id.vt_consumo)
         val tv_distancia = findViewById<TextView>(R.id.vt_distancia)
 
-        tv_resultado.text = ("R$" + resultado.toString())
+        tv_resultado.text = "R$%.2f".format(resultado)
         tv_preco.text = preco.toString()
         tv_consumo.text = consumo.toString()
         tv_distancia.text = distancia.toString()
